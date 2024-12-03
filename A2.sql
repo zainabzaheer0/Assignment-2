@@ -1,13 +1,13 @@
--- Create User table
-CREATE TABLE User (
+-- Create Users table (Renamed to avoid conflict with reserved keyword)
+CREATE TABLE `Users` (
     userId INT PRIMARY KEY AUTO_INCREMENT,
     Name VARCHAR(100) NOT NULL,
     Email VARCHAR(100) NOT NULL UNIQUE,
     Password VARCHAR(255) NOT NULL
 );
 
--- Insert dummy data into User table
-INSERT INTO User (Name, Email, Password)
+-- Insert dummy data into Users table
+INSERT INTO `Users` (Name, Email, Password)
 VALUES 
     ('John Doe', 'johndoe@example.com', 'password123'),
     ('Jane Smith', 'janesmith@example.com', 'password456'),
